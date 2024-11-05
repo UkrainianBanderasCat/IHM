@@ -1,0 +1,27 @@
+.i-youtube {
+    background: url('resources/icons/social/Youtube.svg');
+}
+
+.i-facebook {
+    background: url('resources/icons/social/Facebook.svg');
+}
+
+.i-twitter {
+    background: url('resources/icons/social/Twitter.svg');
+}
+
+.i-instagram {
+    background: url('resources/icons/social/Instagram.svg');
+}
+
+.i-phone {
+    background: url('resources/icons/contact/Phone.svg');
+}
+
+.i-mail {
+    background: url('resources/icons/contact/Mail.svg');
+}
+
+.i-map {
+    background: url('resources/icons/contact/Map.svg');
+}

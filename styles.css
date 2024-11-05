@@ -1,81 +1,109 @@
+/* Global Styles */
 body,
 html {
     margin: 0;
     height: 100%;
 }
 
-.home {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url("Resources/image1.png");
+.btn {
+    border: 2px solid white;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    font-size: 32px;
+}
+
+.section { 
+    margin: 20px 60px 0 60px;
+}
+
+.submit-btn {
+    color: white;
+    border: none;
+    background-color: black;
+    padding-top: 10px;
+    font-size: 24px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    width: 135px;
+    height: 45px;
+}
+
+.contact-btn {
+    width: 213px;
+    height: 58px;
+    margin: 55px 0 0 92px;
+    padding-top: 10px;
+}
+
+.read-btn {
+    width: 163px;
+    height: 58px;
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    padding-top: 10px;
+    margin-top: 48px;
+}
+
+.home-background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("resources/images/background/image1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
     width: 100%;
     height: 100%;
 }
 
 .navbar {
     height: 80px;
-    margin-left: 60px;
-    margin-right: 60px;
-    border-bottom: 3px white solid;
+    margin: 0 60px;
+    border-bottom: 3px solid white;
     list-style-type: none;
-    margin: 0px 60px 0px 60px;
     padding: 0;
     overflow: hidden;
 }
 
+.navbar-item {
+    float: right;
+}
 
-li a {
+.navbar-link {
     display: block;
     color: white;
     text-align: center;
     padding: 33px 12px;
     text-decoration: none;
     font-size: 18px;
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
     margin-right: 7px;
 }
 
-li {
-    float: right;
-}
-
 .logo {
-    margin-left: 7px;
     color: white;
-    justify-self: flex-end;
-    float: left;
     font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 700;
-    font-style: normal;
-    padding-top: 26px;
     font-size: 36px;
-    position: relative;
+    padding-top: 26px;
+    float: left;
 }
 
 .logo-shadow {
     position: absolute;
     top: 28px;
-    left: 2px;
+    left: 62px;
     font-weight: 700;
     font-size: 36px;
     z-index: 1;
-    color: rgba(255, 255, 255, 0);
+    color: transparent;
     -webkit-text-stroke: 1px rgb(255, 255, 255);
 }
 
 .slogan {
     color: white;
     font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 700;
-    font-style: normal;
     margin: 214px 0 0 60px;
     font-size: 82px;
     position: relative;
@@ -88,132 +116,49 @@ li {
     font-weight: 700;
     font-size: 82px;
     z-index: 1;
-    color: rgba(255, 255, 255, 0);
+    color: transparent;
     -webkit-text-stroke: 1px rgb(255, 255, 255);
 }
 
 .underslogan {
     color: white;
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-    margin: 0 0 0 92px;
-    font-size: 32px;
-    width: 434px;
-}
-
-button {
-    border: 2px white solid;
-    cursor: pointer;
-    background-color: transparent;
-    color: white;
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
+    margin-left: 92px;
+    margin-top: 0;
+    width: 500px;
     font-size: 32px;
 }
 
-.contact-btn {
-    width: 213px;
-    height: 58px;
-    margin: 55px 0 0 92px;
-    padding-top: 10px;
-}
-
-.nav {
-    margin-left: 7px;
-}
-
-.about {
-    color: black;
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    margin: 68px 0 0 60px;
-    font-size: 82px;
-    position: relative;
-    padding: 0;
-}
-
-.about-shadow {
-    position: absolute;
-    top: 4px;
-    left: 2px;
-    font-weight: 700;
-    font-size: 82px;
-    z-index: 1;
-    color: rgba(255, 255, 255, 0);
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
-}
-
-.about-text {
-    margin: 26px 0 0 60px;
-}
-
-.about-text {
+.about-content {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin: -10px 0;
-    padding: 0 60px;
-    align-items: stretch;
 }
 
 .about-paragraph {
     width: 600px;
     color: black;
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
     font-size: 24px;
     text-align: justify;
 }
 
 .divider {
-    width: 3px;
     background-color: #000000;
-    height: auto;
+    height: 3px;
     min-height: 100%;
-    margin: 0 10px;
+    border: none;
+    margin: 60px 0 0 0;
 }
 
 .about-image {
-    background-image: url("Resources/image2.png");
+    background-image: url("resources/images/background/image2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    margin: 41px 60px 0 60px;
+    margin: 41px 0 0 0;
     height: 495px;
 }
 
-.blog {
-    color: black;
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    margin: 60px 0 0 0;
-    font-size: 82px;
-    position: relative;
-    padding: 0;
-}
-
-.blog-shadow {
-    position: absolute;
-    top: 4px;
-    left: 2px;
-    font-weight: 700;
-    font-size: 82px;
-    z-index: 1;
-    color: rgba(255, 255, 255, 0);
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
-}
-
-.blog-section {
+.blog-posts {
     margin: 0 60px;
 }
 
@@ -240,212 +185,36 @@ button {
 
 .blog-title {
     color: black;
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
     margin: 6px 0 0 0;
     font-size: 32px;
-    padding: 0;
-    width: 420px;
 }
 
 .blog-description {
     color: black;
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
     margin: 6px 0 0 0;
     font-size: 20px;
-    padding: 0;
-    width: 420px;
 }
 
-.read-btn {
-    width: 163px;
-    height: 58px;
-
-    border: 2px rgb(0, 0, 0) solid;
-    cursor: pointer;
-    background-color: transparent;
-    color: rgb(0, 0, 0);
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-size: 32px;
-    padding-top: 10px;
-    margin-top: 48px;
-}
-
-.h-divider {
-    border: 2px black solid;
-    margin: 60px 0 0 0;
-}
-
-.contact-section { 
-    margin: 60px 60px 0 60px;
-}
-
-.contact {
-    color: black;
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    margin: 78px 0 0 0;
-    font-size: 82px;
-    position: relative;
-    padding: 0;
-}
-
-.contact-shadow {
-    position: absolute;
-    top: 4px;
-    left: 2px;
-    font-weight: 700;
-    font-size: 82px;
-    z-index: 1;
-    color: rgba(255, 255, 255, 0);
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
-}
-
-.form-text {
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-size: 28px;
-}
-
-.input-name {
+.input-field {
     width: 450px;
     height: 45px;
-    border: 2px black solid;
+    border: 2px solid black;
     cursor: pointer;
     background-color: transparent;
     color: black;
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
     font-size: 24px;
-}
-
-.input-phone {
-    width: 450px;
-    height: 45px;
-    border: 2px black solid;
-    cursor: pointer;
-    background-color: transparent;
-    color: black;
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-size: 24px;
-}
-
-.input {
-    padding-bottom: 7px;
+    padding: 0 8px;
 }
 
 .contact-form {
     margin-top: -20px;
-}
-
-.submit {
-    color: white;
-    border-color: black;
-    background-color: black;
-    padding-top: 10px;
-    font-size: 24px;
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    width: 135px;
-    height: 45px;
-}
-
-.divider-row {
-    margin-top: 42px;
     display: flex;
-    align-items: center;
-}
-
-.half-divider {
-    height: 3px;
-    background-color: black;
-    margin: 0 0;
-    width: 185px;
-}
-
-.text {
-    padding: 0 11px 0 11px;
-    font-size: 36px;
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-}
-
-.contacts-text {
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-size: 28px;
-    margin-top: 38px;
-}
-
-.i-phone {
-    background: url('Resources/Phone.svg');
-    height: 42px;
-    width: 42px;
-    display: block;
-}
-
-.i-mail {
-    background: url('Resources/Mail.svg');
-    height: 42px;
-    width: 42px;
-    display: block;
-}
-
-.i-map {
-    background: url('Resources/Map\ pin.svg');
-    height: 42px;
-    width: 42px;
-    display: block;
-}
-
-.phone-contact {
-    display: flex;
-    font-size: 24px;
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 400;
-    align-items: center;
+    flex-direction: column; 
     gap: 10px;
-    margin-top: -15px;
-}
-
-.mail-contact {
-    display: flex;
-    font-size: 24px;
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 400;
-    align-items: center;
-    gap: 10px;
-    margin-top: -15px;
-}
-
-.map-contact {
-    display: flex;
-    font-size: 24px;
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 400;
-    align-items: center;
-    gap: 10px;
-    margin-top: -15px;
 }
 
 .footer-section {
-    margin: 0 60px 0 60px;
+    margin: 0 60px;
     display: flex;
     justify-content: space-between;
     padding-bottom: 10px;
@@ -453,47 +222,86 @@ button {
 
 .footer-text {
     font-size: 36px;
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 300;
     margin-left: 7px;
     margin-top: 20px;
     margin-bottom: 0;
 }
 
-.footer-text .regular {
-    font-weight: 400;
-}
-
 .social-networks {
     margin-top: 22px;
+    margin-right: 7px;
     display: flex;
     gap: 10px;
 }
 
-.i-youtube{
-    background: url('Resources/Youtube.svg');
+.contact-info {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: -15px;
+}
+
+.i-youtube, .i-facebook, .i-instagram, .i-twitter {
     height: 26px;
     width: 26px;
     display: block;
 }
 
-.i-facebook{
-    background: url('Resources/Facebook.svg');
-    height: 26px;
-    width: 26px;
+.i-phone, .i-mail, .i-map {
+    height: 42px;
+    width: 42px;
     display: block;
 }
 
-.i-twitter{
-    background: url('Resources/Twitter.svg');
-    height: 26px;
-    width: 26px;
-    display: block;
+.section-title {
+    color: black;
+    font-size: 82px;
+    position: relative;
+    padding: 0;
+    margin-bottom: 0;
 }
 
-.i-instagram{
-    background: url('Resources/Instagram.svg');
-    height: 26px;
-    width: 26px;
-    display: block;
+.section-title-shadow {
+    position: absolute;
+    top: 4px;
+    left: 2px;
+    font-size: 82px;
+    z-index: 1;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+
+.cta {
+    font-size: 30px;
+    color: black;
+    margin-bottom: 25px;
+}
+
+.divider-row {
+    display: flex;
+    gap: 15px;
+    margin: 40px 0 0 0;
+}
+
+.divider-text {
+    font-size: 30px;
+}
+
+.small-divider {
+    height: 3px;
+    width: 185px;
+    border: none;
+    min-height: 100%;
+    background-color: black;
+    margin: 10px 0 0 0;
+}
+
+.vertical-divider {
+    height: 220px;
+    width: 3px;
+    border: none;
+    min-height: 100%;
+    background-color: black;
+    margin: 10px 0 0 0;
 }

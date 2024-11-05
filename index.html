@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
+    <link href="josefin-sans.css" rel="stylesheet">
+    <link href="icons.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
@@ -13,43 +15,44 @@
 </head>
 
 <body>
-    <div class="home">
+    <div class="home-background">
         <ul class="navbar">
             <li class="logo">
                 <span class="logo-shadow">IHM</span>
                 IHM
             </li>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li class="navbar-item"><a class="navbar-link regular" href="#">HOME</a></li>
+            <li class="navbar-item"><a class="navbar-link regular" href="#">ABOUT</a></li>
+            <li class="navbar-item"><a class="navbar-link regular" href="#">BLOG</a></li>
+            <li class="navbar-item"><a class="navbar-link regular" href="#">CONTACT</a></li>
         </ul>
-
+    
         <h1 class="slogan">
             <span class="slogan-shadow">“Law on your side.”</span>
             “Law on your side.”
         </h1>
-        <p class="underslogan">Guiding you through every legal challenge with clarity and commitment.</p>
-
-        <button class="contact-btn">Contact</button>
+        <p class="underslogan extralight">Guiding you through every legal challenge with clarity and commitment.</p>
+    
+        <button class="btn contact-btn light">Contact</button>
     </div>
+    
 
-    <div>
-        <h1 class="about">
-            <span class="about-shadow">About</span>
+    <div class="section">
+        <h1 class="section-title bold">
+            <span class="section-title-shadow bold">About</span>
             About
         </h1>
 
-        <div class="about-text">
-            <div class="about-paragraph">
+        <div class="about-content">
+            <div class="about-paragraph regular">
                 <p>At IHN, we believe that effective legal representation is built on trust, integrity, and unwavering
                     commitment to our clients. Our team consists of skilled attorneys with extensive experience across
                     diverse legal fields, including corporate law, family law, criminal defense. Whether navigating
                     complex business transactions or defending personal rights, we bring a thorough, strategic approach
                     to every case.</p>
             </div>
-            <div class="divider"></div>
-            <div class="about-paragraph">
+            <div class="vertical-divider"></div>
+            <div class="about-paragraph regular">
                 <p>Founded in 1998 by Andreiev Yurii, IHN began with a clear mission: to offer personalized,
                     high-quality legal representation to individuals and businesses in need. What started as a small
                     practice dedicated to small business advocacy has since grown into a multi-disciplinary firm with a
@@ -61,76 +64,72 @@
         <div class="about-image"></div>
     </div>
 
-    <div class="blog-section">
-        <h1 class="blog">
-            <span class="blog-shadow">Blog</span>
+    <div class="section">
+        <h1 class="section-title bold">
+            <span class="section-title-shadow bold">Blog</span>
             Blog
         </h1>
 
         <div class="blog-row">
             <div class="blog-post">
-                <div class="blog-img" style="background-image: url('Resources/image3.png');"></div>
-                <h1 class="blog-title">5 Key Legal Steps for Starting Your Business</h1>
-                <p class="blog-description">A guide for entrepreneurs covering essential legal steps, such as business
+                <div class="blog-img" style="background-image: url('resources/images/blogs/image3.png');"></div>
+                <h1 class="blog-title semibold">5 Key Legal Steps for Starting Your Business</h1>
+                <p class="blog-description light">A guide for entrepreneurs covering essential legal steps, such as business
                     registration, tax obligations, and contract basics.</p>
-                <button class="read-btn">Read</button>
+                <button class="read-btn regular">Read</button>
             </div>
 
             <div class="blog-post">
-                <div class="blog-img" style="background-image: url('Resources/image4.png');"></div>
-                <h1 class="blog-title">Estate Planning Essentials: Wills, Trusts, and More</h1>
-                <p class="blog-description">An introductory guide on estate planning, with practical tips on wills,
+                <div class="blog-img" style="background-image: url('resources/images/blogs/image4.png');"></div>
+                <h1 class="blog-title semibold">Estate Planning Essentials: Wills, Trusts, and More</h1>
+                <p class="blog-description light">An introductory guide on estate planning, with practical tips on wills,
                     trusts, and powers of attorney to help readers secure their legacy.</p>
-                <button class="read-btn">Read</button>
+                <button class="read-btn regular">Read</button>
             </div>
 
             <div class="blog-post">
-                <div class="blog-img" style="background-image: url('Resources/image5.png');"></div>
-                <h1 class="blog-title">5 Things to Consider When Hiring an Attorney</h1>
-                <p class="blog-description">A helpful guide for those seeking legal representation, with advice on
+                <div class="blog-img" style="background-image: url('resources/images/blogs/image5.png');"></div>
+                <h1 class="blog-title semibold">5 Things to Consider When Hiring an Attorney</h1>
+                <p class="blog-description light">A helpful guide for those seeking legal representation, with advice on
                     choosing the right lawyer and knowing what to expect.</p>
-                <button class="read-btn">Read</button>
+                <button class="read-btn regular">Read</button>
             </div>
         </div>
 
-        <hr class="h-divider">
+        <hr class="divider">
     </div>
 
-    <div class="contact-section">
-        <h1 class="contact">
-            <span class="contact-shadow">Contact</span>
+    <div class="section">
+        <h1 class="section-title bold">
+            <span class="section-title-shadow bold">Contact</span>
             Contact
         </h1>
 
-        <p class="form-text">Fill the form and get a call</p>
+        <p class="cta semibold">Fill the form and get a call</p>
         <form class="contact-form">
-            <div class="input">
-                <input class="input-name">
-            </div>
-            <div class="input">
-                <input class="input-phone">
-            </div>
-            <button class="submit">Submit</button>
+            <input class="input-field light" placeholder="Full name">
+            <input class="input-field light" placeholder="+38 (___) __ ___ __">
+            <button class="submit-btn light">Submit</button>
         </form>
 
         <div class="divider-row">
-            <div class="half-divider"></div>
-            <span class="text">OR</span>
-            <div class="half-divider"></div>
+            <hr class="small-divider">
+            <span class="divider-text semibold">OR</span>
+            <hr class="small-divider">
         </div>
 
-        <p class="contacts-text">Contact us</p>
+        <p class="cta semibold">Contact us</p>
         <div class="contacts">
-            <p class="phone-contact"><i class="i-phone"></i> +38 (096) 81 692 11<p>
-            <p class="mail-contact"><i class="i-mail"></i> andreyev.ura@gmail.com</p>
-            <p class="map-contact"><i class="i-map"></i> Lviv, Koverka 4a</p>
+            <p class="contact-info regular"><i class="i-phone"></i> +38 (096) 81 692 11<p>
+            <p class="contact-info regular"><i class="i-mail"></i> andreyev.ura@gmail.com</p>
+            <p class="contact-info regular"><i class="i-map"></i> Lviv, Koverka 4a</p>
         </div>
 
-        <hr class="h-divider">
+        <hr class="divider">
     </div>
 
     <div class="footer-section">
-        <p class="footer-text">
+        <p class="footer-text light">
             <span class="regular">INH</span> © 2024
         </p>
 

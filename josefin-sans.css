@@ -1,0 +1,24 @@
+.extralight {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 200;
+}
+
+.light {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+}
+
+.regular {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+}
+
+.semibold {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+}
+
+.bold {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+}
