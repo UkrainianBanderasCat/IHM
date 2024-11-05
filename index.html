@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
     <title>Document</title>
+    <script src="https://unpkg.com/imask"></script>
 </head>
 
 <body>
@@ -108,7 +109,7 @@
         <p class="cta semibold">Fill the form and get a call</p>
         <form class="contact-form">
             <input class="input-field light" placeholder="Full name">
-            <input class="input-field light" placeholder="+38 (___) __ ___ __">
+            <input class="input-field light" placeholder="+38 (___) __ ___ __" id="phone-input" maxlength="19">
             <button class="submit-btn light">Submit</button>
         </form>
 
@@ -143,4 +144,12 @@
     
 </body>
 
+<script>
+    // Set up the IMask on the phone input
+    var phoneInput = document.getElementById('phone-input');
+    var maskOptions = {
+        mask: '+38 (000) 00 000 00',
+    };
+    var mask = IMask(phoneInput, maskOptions);
+</script>
 </html>
